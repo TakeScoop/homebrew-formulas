@@ -1,2 +1,13 @@
-# homebrew-kubectl-exec-forward
-This repo manages the Homebrew formula for takescoop/kubectl-exec-forward
+# homebrew-formulas
+
+This repository stores TakeScoop Homebrew formulas.
+
+## Usage
+
+To install TakeScoop packages, configure the tap
+
+```sh
+brew tap takescoop/formulas
+brew install <package>
+```
+
