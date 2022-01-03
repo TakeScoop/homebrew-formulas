@@ -1,6 +1,6 @@
 # homebrew-formulas
 
-This repository stores TakeScoop Homebrew formulas.
+This repository stores Homebrew formulas.
 
 ## Usage
 
