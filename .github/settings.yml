@@ -1,0 +1,7 @@
+_extends: .github
+repository:
+  name: homebrew-formulas
+  description: A collection of Homebrew formulas
+  topics: homebrew
+  allow_auto_merge: true
+  private: false
