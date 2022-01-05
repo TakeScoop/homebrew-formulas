@@ -5,20 +5,20 @@
 class KubectlExecForward < Formula
   desc "A kubectl plugin to run exec hooks exposed by a Kubernetes pod around a port-forward action."
   homepage "https://github.com/takescoop/kubectl-exec-forward"
-  version "0.0.4"
+  version "0.0.5"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/TakeScoop/kubectl-exec-forward/releases/download/v0.0.4/kubectl-exec-forward_0.0.4_darwin_amd64.tar.gz"
-      sha256 "2be04705969bb6f02c09daf3e7015274d2d40293c8374e623c28e8c3f7342983"
+    if Hardware::CPU.arm?
+      url "https://github.com/TakeScoop/kubectl-exec-forward/releases/download/v0.0.5/kubectl-exec-forward_0.0.5_darwin_arm64.tar.gz"
+      sha256 "bd14fb9327e6ba754cd6c7b8383733b6401849fec605684803080b6232d79c69"
 
       def install
         bin.install "kubectl-exec_forward"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/TakeScoop/kubectl-exec-forward/releases/download/v0.0.4/kubectl-exec-forward_0.0.4_darwin_arm64.tar.gz"
-      sha256 "0d776cc770f6fcb6529db916cc15ab9ab9326d734c31b8a62a998a6f4bb3a0bb"
+    if Hardware::CPU.intel?
+      url "https://github.com/TakeScoop/kubectl-exec-forward/releases/download/v0.0.5/kubectl-exec-forward_0.0.5_darwin_amd64.tar.gz"
+      sha256 "08437fd156c0b040c53d6e7d6ee3152b6b43d800aa02b971fcb816ce413378c2"
 
       def install
         bin.install "kubectl-exec_forward"
@@ -28,16 +28,16 @@ class KubectlExecForward < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TakeScoop/kubectl-exec-forward/releases/download/v0.0.4/kubectl-exec-forward_0.0.4_linux_arm64.tar.gz"
-      sha256 "b0bfde520d3963a181b400dea3a9a39b7c93af135657d6cbc231727f12444532"
+      url "https://github.com/TakeScoop/kubectl-exec-forward/releases/download/v0.0.5/kubectl-exec-forward_0.0.5_linux_arm64.tar.gz"
+      sha256 "40298b90df42440aafd0a6888836deebbd310b96c4ab371282bce5c7bf535b8c"
 
       def install
         bin.install "kubectl-exec_forward"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/TakeScoop/kubectl-exec-forward/releases/download/v0.0.4/kubectl-exec-forward_0.0.4_linux_amd64.tar.gz"
-      sha256 "5b60ccf05d559ed9bf6f083bafb3b5e47635c6b07ed09624d3a488ac331fdd9f"
+      url "https://github.com/TakeScoop/kubectl-exec-forward/releases/download/v0.0.5/kubectl-exec-forward_0.0.5_linux_amd64.tar.gz"
+      sha256 "c07be8fb71573ee77625bfda93a34d3e6f7ba88efb99d0a4c4f0835af3083319"
 
       def install
         bin.install "kubectl-exec_forward"
